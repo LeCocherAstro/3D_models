@@ -3,3 +3,10 @@
 
 * `Live demo 2024-03-15/` contient le réducteur de diamètre 1.25" / tube PVC de 50mm et le fichier OpenSCAD décomposant la modélisation étape par étape
 
+* `DIY PVC-based telescope/` : dossier regroupant les différentes pièces modélisées pour le projet de téléscope DIY à base de tubes PVC
+
+* `Standard-compliant adapters/`: dossier accueillant des objets permettant de raccorder 'n'importe quoi' à un support standard, type queue d'aronde Vixen, platine Arcaswiss, pied photo Kodak, ...
+
+* `Specific to Celestron mounts/` : dossier accueillant différents objets qui n'ont de sens que pour des montures Celestron
+
+
