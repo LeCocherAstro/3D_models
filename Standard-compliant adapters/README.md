@@ -2,7 +2,7 @@
 
 ## Models having reached `release` status / Modèles imprimés et testés
 
-* N/A
+* Queue d'aronde Vixen pour APN
 
 ## Models still on the drawing board / Design en cours
 
