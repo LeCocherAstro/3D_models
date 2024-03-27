@@ -1,7 +1,7 @@
 // FILTRE SOLAIRE POUR LUNETTE DIY 60
-// Pierre REVEL 21/3/24
-// Prévu pour 3 vis M2 de 6 mm - Les vis fixent le mylar (à trouer avant)
-
+// Version 2 : Pierre REVEL 26/3/24
+// Femeture par 3 vis M2 de 6 mm - Les vis fixent le mylar (à trouer avant)
+// Serrage sur le pare-soleil par vis nylon M4
 // Deux pièces : 1 et 2 (piece=0 affiche les deux)
 piece=0;
 
@@ -38,6 +38,11 @@ module usin1() {
   }
   chanfrein_cyl_int(diam2/2,0);
   chanfrein_cyl_int(diam3/2,14-aju);
+  // SERRAGE
+  translate([0,0,7.5]) rotate([90,0,30]) {
+    cylinder(50,2+aju,2+aju);
+    linear_extrude(height=34.5) circle(r=4+aju,$fn=6);
+  }
 }
 
 module piece1() { difference() { solid1(); usin1(); }}
@@ -55,7 +60,6 @@ module usin2() {
     rotate([0,0,angle]) translate([33.5,0,-10]) cylinder(20,1,1);
     rotate([0,0,angle]) translate([33.5,0,1.7]) cylinder(1.3+aju,1,2);
   }
-  //rotate([0,180,0]) chanfrein_cyl_ext(diam1/2+2,-1);
 }
 
 module piece2() { difference() { solid2(); usin2(); }}
