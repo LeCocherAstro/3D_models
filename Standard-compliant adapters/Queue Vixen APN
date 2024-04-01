@@ -1,8 +1,0 @@
-Support Vixen adapté à un APN
-
-Logiciel : Onshape (gratuit)
-Fichier source : 
-https://cad.onshape.com/documents/ba63a8e3eeca824bff546822/w/d79c076d97ce05d1487c72d0/e/6cb6b4bd7df2b92f30b0e9be?renderMode=0&uiState=660470e0c22e797a6239f0bf
-
-La longeur est de 90mm mais il est assez simple d'adapter la longueur en modifiant le paramètre P (#P = 90mm).
-De même, lespacement entre les trous et la longeur des trous sont modifiables par les paramètres l1, l2, l3, L1 et L3.
