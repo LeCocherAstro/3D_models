@@ -17,22 +17,23 @@
 
 
 
-* `vixen192.scad` : Queue d'aronde au format VIXEN 192 mm spécifiquement conçue pour les colliers pour tubes diamètre 63 et leurs vis de fixation murale
+* `vixen192.scad` : Queue d'aronde au format VIXEN 192 mm spécifiquement conçue pour les colliers pour tubes diamètre 63 et leurs vis de fixation murale. Une version plus courte de 3 cm peut être obtenue en configurant la variable `reduc` à `30` (mm).
 
   ![](_Previews/vixen192.png)
   
   * paramètres d'impression
       * Imprimante : Zortrax M-200 - Filament : Z-ABS (diam. 1.75mm)
-      * Epaisseur de couche : 0,19mm - Support : auto, 20° - Qualité : haute
+      * Epaisseur de couche : 0.19mm (possible en 0.29mm) - Support : auto, 20° - Qualité : haute
       * Remplissage : 30% - Motif : 0 (maillage carré)
   * Impression
-      * Durée : 6h13'
+      * Durée : 6h13' pour version longue en ép. de couche de 0.19mm, 3h54' pour version courte en ép. 0.29mm
       * Filament : 22,34m / 53g
       * Prix approximatif (matériau) : 3,25€
-  * En cas de warping ([cf cette page chez Zortrax](https://support.zortrax.com/troubleshooting-warping/))
-      *  diminuer le "platform gap value" : de 0.2 à 0.19mm
-      *  stopper le ventilateur
-      *  augmenter la température du plateau : de 80 à 85°C
+  * En cas de warping ([cf cette page chez Zortrax](https://support.zortrax.com/troubleshooting-warping/) + autres infos collectées [ici](https://www.wevolver.com/article/abs-print-speed))
+      *  augmenter la température du plateau : passer de 80°C à 85°C voire 90°C (`external materials > platform temp`) 
+      *  ralentir la vitesse d'impression de la première couche (`first layer > print speed` = 50%)
+      *  stopper le ventilateur (décocher `auto` et mettre 0% dans `fan speed`) 
+      *  diminuer le `platform-raft gap` : de 0.2mm à 0.19mm
       
 
 
