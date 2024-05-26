@@ -1,18 +1,20 @@
-// QUEUE D'ARONDE VIXEN 192 MM
+// QUEUE D'ARONDE VIXEN 162 mm & 192mm
 // Pierre REVEL 24/3/24
 //
 // Projet lunette PVC 60 mm DIY
-// Queue d'aronde au format VIXEN 192 mm spécifiquement conçue pour
+// Queue d'aronde au format VIXEN 162mm (possibilité 192 mm) spécifiquement conçue pour
 // les colliers pour tubes diamètre 63 et leurs vis de fixation murale
 
 $fn=72;
 aju=0.1;
 
 ep=4;
-trouvis=5;
+trouvis=5.4; // diamètre trou des vis des colliers 
 
-// 0 pour version longue, 30 pour version raccourcie (de 30mm)
+// 0 pour version 192mm, 30 pour version 162mm (réduite de 30mm)
 reduc=30;
+// le nombre de murs de renfort dans la largeur dépend de la version
+wall_extent = reduc > 0 ? 100 : 80;    
 
 module matiere() {
     union() {
@@ -30,7 +32,7 @@ module matiere() {
 
       // murs de renfort dans la largeur  
       dz=ep/2+7.5-aju;
-      for (y=[0:20:80-reduc]) {
+      for (y=[0:20:wall_extent-reduc]) {
         translate([0,y,dz]) cube([44-2*ep,ep,15-ep],center=true);
         if (y!=0) translate([0,-y,dz]) cube([44-2*ep,ep,15-ep],center=true);
       }
