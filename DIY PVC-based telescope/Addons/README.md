@@ -4,6 +4,7 @@ File with extensions .rsdocx are made using the free software DesignSpark Mechan
 
 # Stop ring / Bague de butée #
 This prevents the inner tube to crash into the black mask inside the outer tube ; uses an M3x8 screw + nut / Empêche le tube interne de venir écraser le masque noir du tube externe ; prévoir des vis M3x8 + écrou.
+Should be locked on the "infinite focus position" on the inner tube / Devrait être verrouillé à la position "mise au point à l'infini" du tube interne.
 
 ![Bague](Lunette-BagueButee.png)
 
