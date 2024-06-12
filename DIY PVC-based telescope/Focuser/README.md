@@ -1,11 +1,11 @@
 Remix Focuseur ["Non rotating helical focuser with M42 connection" de "fredgui78"](https://www.printables.com/fr/model/347950-non-rotating-helical-focuser-with-m42-connection)
 
-Ici on propose un Focuseur *optionnel* pour la Lunett edu COCHER basé sur un design original de "fregui78" sur le site "Printables". L'impression et son montage sont réservés à des utilisateurs avertis ; à noter que la durée et la complexité de l'impression 3D ne justifie pas forcément l'effort si on a accès à des pièces de meilleure qualité en provenance de Chine...
+Ici on propose un Focuseur *optionnel* imprimable en 3D pour la Lunette du COCHER basé sur un design original de "fregui78" sur le site "Printables". **L'impression et son montage sont réservés à des utilisateurs avertis** ; à noter que la durée et la complexité de l'impression 3D ne justifie pas forcément l'effort si l'on a accès à des pièces de meilleure qualité en provenance de Chine...
 
 > Le design original étant basé sur des bagues M42, des adaptateurs sont proposés ici avec leur code source pour utiliser avec la Lunette du COCHER.
-> Par ailleurs, la pièce "2" s'étant avérée très difficile à imprimer (paroie externe trop fine) cette pièce est proposée en 2 versions : originale (à utiliser avec un adaptateur M42 femelle) ou une version modifiée (sans la paroie externe et avec l'adaptateur intégré vers le tube interne de la lunette, ce qui évite d'imprimer 2 pièces et diminue légèrement la logueur du focuseur)
+> Par ailleurs, la pièce "2" originale s'étant avérée très difficile à imprimer (paroie externe trop fine) cette pièce est proposée en 2 versions : originale (à utiliser avec un adaptateur M42 femelle) ou une version modifiée (sans la paroie externe et avec l'adaptateur intégré vers le tube interne de la lunette, ce qui évite d'imprimer en plus un adaptateur et diminue légèrement la logueur du focuseur)
 
-Il est donc conseillé, pour chaque focuseur, d'imprimer les pièces suivantes, avec une résolution optimale de .14mm par couche, si possible en ABS noir pour éviter les réflexions :
+Il est donc nécessaire, pour chaque focuseur, d'imprimer les pièces suivantes, avec une résolution optimale de .14mm par couche en qualité "haute", si possible en ABS noir (pour éviter les réflexions pour les pièces internes) :
 - Focuser-1.stl
 - Focuser-1bis.stl
 - Focuser-2(remix_LeCocher).stl  (ou Focuser-2(M42).stl + adaptateur_M42_femelle_lunette_v2.stl si vous préférez)
