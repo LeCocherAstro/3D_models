@@ -1,6 +1,6 @@
 Remix Focuseur ["Non rotating helical focuser with M42 connection" de "fredgui78"](https://www.printables.com/fr/model/347950-non-rotating-helical-focuser-with-m42-connection)
 
-Ici on propose un Focuseur basé sur un design original de "fregui78" sur le site "Printables". L'impression et son montage sont réservés à des utilisateurs avertis ; à noter que la durée et la complexité de l'impression 3D ne justifie pas forcément l'effort si on a accès à des pièces de meilleur qualité en provenance de Chine...
+Ici on propose un Focuseur *optionnel* pour la Lunett edu COCHER basé sur un design original de "fregui78" sur le site "Printables". L'impression et son montage sont réservés à des utilisateurs avertis ; à noter que la durée et la complexité de l'impression 3D ne justifie pas forcément l'effort si on a accès à des pièces de meilleure qualité en provenance de Chine...
 
 > Le design original étant basé sur des bagues M42, des adaptateurs sont proposés ici avec leur code source pour utiliser avec la Lunette du COCHER.
 > Par ailleurs, la pièce "2" s'étant avérée très difficile à imprimer (paroie externe trop fine) cette pièce est proposée en 2 versions : originale (à utiliser avec un adaptateur M42 femelle) ou une version modifiée (sans la paroie externe et avec l'adaptateur intégré vers le tube interne de la lunette, ce qui évite d'imprimer 2 pièces et diminue légèrement la logueur du focuseur)
