@@ -15,7 +15,8 @@ Il est donc conseillé, pour chaque focuseur, d'imprimer les pièces suivantes, 
 - adaptateur_M42_male_oculaire_v2.stl
 
 Montage des pièces (s'inspirer du plan ci-dessous) :
-1. Coller les pièces Focuser-1.stl et Focuser-1bis.stl et les insérer dans la pièce 3 avec un peu de graisse silicone autour de la pièce 1bis pour facilier leur rotation
+![](Montage_Focuser.jpeg)
+1. Coller les pièces Focuser-1.stl à Focuser-1bis.stl puis les insérer dans la pièce 3 avec un peu de graisse silicone autour de la pièce 1bis pour facilier leur rotation
 2. Visser et coller la pièce 4 dans la pièce 3 au dessus des pièces 1 **sans serrer : les pièces 1 doivent pouvoir tourner !**
 3. Enfoncer et coller la pièce 5 sur la pièce 3
 4. Graisser les rainures et le filetage de la pièce 2, l'insérer dans la pièce 3, et tourner la pièce 5 pour la faire entrer
