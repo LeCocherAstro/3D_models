@@ -16,3 +16,5 @@
 
   ![](_Previews/Support_filtre_solaire.png)
 
+* `collier_lunette_diy_v2.scad`: Clamp for PVC tube with a diameter equal to 63mm to connect to a dovetail and an upper bar to fix a RIGEL kickfinder / Collier pour tube PVC diam. 63mm à relier à une queue d'aronde et une barre supèrieure pour fixer un chercheur du type kickfinder de RIGEL
+![](Collier_tube/collier_avec_rotule.PNG)
