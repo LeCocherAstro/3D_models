@@ -1,6 +1,6 @@
 Remix Focuseur ["Non rotating helical focuser with M42 connection" de "fredgui78"](https://www.printables.com/fr/model/347950-non-rotating-helical-focuser-with-m42-connection)
 
-![](Focuser_lunette.jpg]
+![](Focuser_lunette.jpeg)
 
 Ici on propose un Focuseur *optionnel* imprimable en 3D pour la Lunette du COCHER basé sur un design original de "fregui78" sur le site "Printables". **L'impression et son montage sont réservés à des utilisateurs avertis** ; à noter que la durée et la complexité de l'impression 3D ne justifie pas forcément l'effort si l'on a accès à des pièces de meilleure qualité en provenance de Chine...
 
@@ -24,4 +24,4 @@ Montage des pièces (s'inspirer du plan ci-dessous) :
 4. Graisser les rainures et le filetage de la pièce 2, l'insérer dans la pièce 3, et tourner la pièce 5 pour la faire entrer
 5. Visser (et coller ?) l'adaptateur M42 male dans la pièce 1 **sans serrer ; on doit pouvoir tourner librement cette pièce indépendemment de la partie du dessus !**
 
-![](Focuser_3dprint.jpg]
+![](Focuser_3dprint.jpeg)
