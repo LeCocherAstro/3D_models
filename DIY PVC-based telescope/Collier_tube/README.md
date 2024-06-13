@@ -17,3 +17,5 @@ Il faut juste changer la valeur du paramètre "avec_rotule" à la ligne 10 : 0 =
 
 ![photo_collier_avec_rotule](collier_avec_rotule.PNG)
 ![photo_collier_sans_rotule](collier_sans_rotule.PNG)
+
+Il est conseillé de monter les écrous M4 en chauffant avec un fer à souder. Cela évitera des cassures des pièces !
