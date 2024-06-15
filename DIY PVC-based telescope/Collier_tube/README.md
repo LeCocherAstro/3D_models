@@ -3,6 +3,7 @@
 Logiciel : OpenSCAD (gratuit)
 
 [Lien fichier stl - collier dessous avec rotule - largeur 14mm](attache_lunette_diy_v2_bas_L14.stl)
+
 [Lien fichier stl - collier dessus avec rotule  - largeur 14mm](attache_lunette_diy_v2_haut_L14.stl)
 
 [Lien fichier stl - collier complet sans rotule - largeur 12mm](collier_lunette_diy_L12.stl)
