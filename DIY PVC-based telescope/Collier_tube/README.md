@@ -2,9 +2,8 @@
 
 Logiciel : OpenSCAD (gratuit)
 
-[Lien fichier stl - collier dessous - largeur 14mm](attache_lunette_diy_v2_bas_L14.stl)
-
-[Lien fichier stl - collier dessus - largeur 14mm](attache_lunette_diy_v2_haut_L14.stl)
+[Lien fichier stl - collier dessous avec rotule - largeur 14mm](attache_lunette_diy_v2_bas_L14.stl)
+[Lien fichier stl - collier dessus avec rotule  - largeur 14mm](attache_lunette_diy_v2_haut_L14.stl)
 
 [Lien fichier stl - collier complet sans rotule - largeur 12mm](collier_lunette_diy_L12.stl)
 
@@ -20,5 +19,5 @@ Il faut juste changer la valeur du paramètre "avec_rotule" à la ligne 10 : 0 =
 
 ![photo_collier_avec_rotule](collier_avec_rotule.PNG)
 ![photo_collier_sans_rotule](collier_sans_rotule.PNG)
-
+ 
 Il est conseillé de monter les écrous M4 en chauffant avec un fer à souder. Cela évitera des cassures des pièces !
