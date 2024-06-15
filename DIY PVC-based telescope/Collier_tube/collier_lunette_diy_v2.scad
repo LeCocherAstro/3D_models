@@ -20,7 +20,8 @@ union()
   color("DarkKhaki") attache_inferieur();
   attache_superieur();
 }
-//barre();
+barre();
+
 //------------------------------------------------------------------
 //------------------------------------------------------------------
 
@@ -29,7 +30,7 @@ marge = 0.1;
 // Demi cylindre
 d_int = 63.15+0.1;
 epaisseur = 5;
-largeur = 12; //10;
+largeur = 14; //10;
 
 // Passage de la vis de serrage, partie de droite
 l_fixation_droite = 10;
@@ -43,7 +44,7 @@ epaisseur_connecteur = 3;
 e_fixation_droite_a_retirer = 1; // Afin de bien fixer la lunette et éviter du jeu
 
 // Pièce pour joindre les 2 attaches - vis à vis partie inferieure
-e_fixation_gauche  = 3;   // Partie centrale de la fix ation
+e_fixation_gauche  = 5; //3;   // Partie centrale de la fix ation
 e1_fixation_gauche = 4.5;   // Côté vis 
 e2_fixation_gauche = largeur - e_fixation_gauche - e1_fixation_gauche; // Opposée côté vis
 h_fixation_gauche  = 5;
@@ -321,57 +322,55 @@ module attache_inferieur()
 
 //------------------------------------------------------------------
 // Barre d'attache du kickfinder de Rigel
-
-epaisseur_dessous = 0;
-epaisseur_barre = 11;
-profondeur_int_barre = 2;
-largeur_ext_barre = 41.05;
-profondeur_ext_barre = 40.7;
-largeur_int_barre = 36.1;
-largeur_bord_barre = (largeur_ext_barre-largeur_int_barre)/2;
-
+//------------------------------------------------------------------
+epaisseur_barre = 8; //10;
+largeur_barre = base_dessus; //32 41.05;
 longeur_barre = 90;
-//longeur_barre = profondeur_ext_barre;
 
-largeur_grand_trou = 28.8;
+espacement_trous   = 24.5;  // Distance entre 2 kickfinder
+largeur_grand_trou = 29.0;
 largeur_petit_trou = 10.0;
-hauteur_cote_petit_trou = 4.67;
-espacement_trous = 24.6;
-longeur_trou = 5.55;
-profondeur_trou = 6.25;
-hauteur_cote_grand_trou = profondeur_trou - 4.4;
+longeur_grand_trou = 6.0;
+longeur_fond_grand_trou = 3.0;
+longeur_fond_petit_trou = 2.0;
+longeur_petit_trou = 5.5;
+
+profondeur_trou = 6.0;
+decalage_axe_y_grand_trou = 2.5;
+decalage_axe_y_petit_trou = 1.5;
+
+position_axe_z_kickfinder = 15;
 
 
 module kick_finder_rigel()
 {
       // Petit trou
       // 1- Supprimer matière par le dessus
-     translate([-largeur_petit_trou/2,epaisseur_dessous+epaisseur_barre-profondeur_int_barre-profondeur_trou,largeur_bord_barre])  
-        cube([largeur_petit_trou,profondeur_trou+1*marge,longeur_trou],center=false); 
+     translate([-largeur_petit_trou/2,epaisseur_barre-profondeur_trou,0])  
+        cube([largeur_petit_trou,profondeur_trou,longeur_petit_trou],center=false); 
         
       // 2 -Supprimer matière par le côté
-     translate([-largeur_petit_trou/2,epaisseur_dessous+epaisseur_barre-profondeur_int_barre-profondeur_trou,-1*marge]) cube([largeur_petit_trou,hauteur_cote_petit_trou,largeur_bord_barre+1*marge],center=false);   
+     translate([-largeur_petit_trou/2,epaisseur_barre-profondeur_trou,-longeur_fond_petit_trou]) cube([largeur_petit_trou,profondeur_trou - decalage_axe_y_petit_trou,longeur_fond_petit_trou],center=false);   
         
         
       // Grand trou
       // 4- Supprimer matière par le dessus
       // Idem 1, mais modifier la largeur et décaler en z de espacement_trous
-     translate([-largeur_grand_trou/2,epaisseur_dessous+epaisseur_barre-profondeur_int_barre-profondeur_trou,largeur_bord_barre+longeur_trou+espacement_trous])  
-        cube([largeur_grand_trou,profondeur_trou+1*marge,longeur_trou],center=false);       
+     translate([-largeur_grand_trou/2,epaisseur_barre-profondeur_trou,longeur_petit_trou+espacement_trous]) cube([largeur_grand_trou,profondeur_trou,longeur_grand_trou],center=false);       
         
       // Idem 2 mais pour le grand trou
-    translate([-largeur_grand_trou/2,epaisseur_dessous+epaisseur_barre-profondeur_int_barre-profondeur_trou,profondeur_ext_barre-largeur_bord_barre-2*marge]) cube([largeur_grand_trou,hauteur_cote_grand_trou,largeur_bord_barre+5*marge],center=false);
+    translate([-largeur_grand_trou/2,epaisseur_barre-profondeur_trou,longeur_petit_trou + espacement_trous + longeur_grand_trou]) cube([largeur_grand_trou,profondeur_trou - decalage_axe_y_grand_trou,longeur_fond_grand_trou],center=false);
 }
 
 
 module trou_fixation_barre(position)
 {
     // Trou pour la vis
-    translate([0,(epaisseur_dessous+epaisseur_barre)/2,position]) rotate([90,0,0]) cylinder(h=epaisseur_dessous+epaisseur_barre, d=d_fixation_centrale, center=true);
+    translate([0,(epaisseur_barre)/2,position]) rotate([90,0,0]) cylinder(h=epaisseur_barre, d=d_fixation_centrale, center=true);
     // Trou pour la tête de vis
-    translate([0,-profondeur_tete_vis_M4/2+epaisseur_dessous+epaisseur_barre-profondeur_int_barre-10*marge,position]) rotate([90,0,0]) cylinder(h=profondeur_tete_vis_M4, d=d_tete_vis_M4, center=true);   
+    translate([0,-profondeur_tete_vis_M4/2+epaisseur_barre-10*marge,position]) rotate([90,0,0]) cylinder(h=profondeur_tete_vis_M4, d=d_tete_vis_M4, center=true);   
     // Complement pour supprimer toute la matière du trou pour la tête de vis
-    translate([0,-profondeur_tete_vis_M4/2+epaisseur_dessous+epaisseur_barre-profondeur_int_barre+1*marge,position]) rotate([90,0,0]) cylinder(h=profondeur_tete_vis_M4, d=d_tete_vis_M4, center=true); 
+    translate([0,-profondeur_tete_vis_M4/2+epaisseur_barre+1*marge,position]) rotate([90,0,0]) cylinder(h=profondeur_tete_vis_M4, d=d_tete_vis_M4, center=true); 
 }
 
 
@@ -382,39 +381,28 @@ module barre()
     difference()
     {
       // Barre principale
-      translate([-largeur_ext_barre/2,0,0]) cube([largeur_ext_barre,epaisseur_barre+epaisseur_dessous,longeur_barre],center=false);
+      translate([-largeur_barre/2,0,0]) cube([largeur_barre,epaisseur_barre,longeur_barre],center=false);
         
-        
-      // Supprimer matière sur le dessus
-      translate([-largeur_int_barre/2,epaisseur_dessous+epaisseur_barre-profondeur_int_barre,largeur_bord_barre]) cube([largeur_int_barre,profondeur_int_barre+2*marge,longeur_barre-2*largeur_bord_barre],center=false); 
-      
-      // Supprimer matière sur le dessous
-      translate([-base_dessus/2,-2*marge,-2*marge]) cube([base_dessus+1*marge,epaisseur_dessous+2*marge,longeur_barre+4*marge],center=false);
-
+      // Supprimer matière pour kickfinder
       if(grande_barre == 1)
       {       
         // Placement kickfinder Rigel
-        translate([0,0,15])kick_finder_rigel();
+        translate([0,0,position_axe_z_kickfinder])kick_finder_rigel();
         // Placement 2nd kickfinder Rigel
-        translate([0,0,35]) kick_finder_rigel();    
-      
-    
-        // Passage vis pour la fixation avec la base du dessus
-        position1 = d_fixation_centrale/2+largeur/2;
-        trou_fixation_barre(position1);
-        // Idem, mais décalée depuis le haut de cette barre
-        position2 = longeur_barre - position1;
-        trou_fixation_barre(position2);   
+        translate([0,0,position_axe_z_kickfinder+20]) kick_finder_rigel();      
       }
       else
       {
         // Placement kickfinder Rigel
-        translate([0,0,0])kick_finder_rigel(); 
-        
-        // Passage vis pour la fixation avec la base du dessus 
-        position1 = profondeur_ext_barre/2;
-        trou_fixation_barre(position1);        
+        translate([0,0,position_axe_z_kickfinder]) kick_finder_rigel();         
       }
+      
+      // Supprimer matière pour les fixations avec la base du dessus
+      position1 = largeur/2;
+      trou_fixation_barre(position1);
+      // Idem, mais décalée depuis le haut de cette barre
+      position2 = longeur_barre - position1;
+      trou_fixation_barre(position2); 
         
     }
   }
