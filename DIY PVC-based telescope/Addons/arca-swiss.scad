@@ -21,6 +21,7 @@ module matiere() {
 module percage() {
   translate([0,ecart/2,-10]) cylinder(h=45,d=trouvis);
   translate([0,-ecart/2,-10])  cylinder(h=45,d=trouvis);
+  translate([0,0,-1]) cube([16,180,4],center=true);
 }
 
 difference() {
