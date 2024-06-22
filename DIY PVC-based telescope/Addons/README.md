@@ -16,3 +16,11 @@ File with extensions .rsdocx are made using the free software [DesignSpark Mecha
 # Front plug / Bouchon avant #
 
 ![BouchonAV](Lunette-BouchonAV.png)
+
+# Dovetail / Queue d'aronde Arca Swiss #
+
+> Arca Swiss-compatible dovetail to secure the PVC tube with collars on top of a photo tripod like [this one](https://en.aliexpress.com/item/1005004657916177.html) available on Ali Express
+ 
+> Queue d'aronde au format Arca Swiss pour montage avec colliers de tubes PVC sur tête photo comme [celle-ci](https://fr.aliexpress.com/item/1005004657916177.html) trouvée par Luc sur Ali Express à 70€
+
+![QA_ArcaSwiss](arca-swiss.jpg)
