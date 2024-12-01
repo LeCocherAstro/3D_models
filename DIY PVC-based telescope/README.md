@@ -15,5 +15,5 @@ C'est [une petite lunette imaginée par Pierre REVEL au club d'Astronomie du COC
 ## La construction
 ![](./G2_20240525_144823.jpg)
 
-## Quelqes heures plus tards, les premiers essais
+## Quelqes heures plus tard, les premiers essais
 ![](./G2_20240525_165824.jpg)
