@@ -4,7 +4,7 @@
 
 * `Adapt_oculaire_PVC.scad`: fits a 1.25" eyepiece or star diagonal into a 50mm-diameter PVC pipe / adaptateur oculaire ou renvoi coudé de 31.75mm pour tube PVC diam. 50mm
 
-  ![](_Previews/Adapt_oculaire_PVC.png)
+  ![](Adapt_oculaire_PVC.png)
   
   * paramètres d'impression
       * Imprimante : Zortrax M-200 - Filament : Z-ULTRAT (diam. 1.75mm)
@@ -19,7 +19,7 @@
 
 * `vixen162.scad` : Queue d'aronde au format VIXEN 162 ou 192 mm spécifiquement conçue pour les colliers pour tubes diamètre 63 et leurs vis de fixation murale. Une version plus longue de 3 cm peut être obtenue en configurant la variable `reduc` à `0` (mm).
 
-  ![](_Previews/vixen192.png)
+  ![](vixen192.png)
   
   * paramètres d'impression
       * Imprimante : Zortrax M-200 - Filament : Z-ABS (diam. 1.75mm)
