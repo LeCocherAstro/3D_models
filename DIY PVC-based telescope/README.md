@@ -7,3 +7,7 @@ La lunette est facile à fabriquer [grâce au plan PDF fournit ici](./Constructi
 
 ![Plan général](./PLAN_lunettes_DIY.png)
 
+# Quelques souvenir du printemps 2024...
+
+![](./G2_20240525_144823.jpg)
+![](./G2_20240525_165824.jpg)
