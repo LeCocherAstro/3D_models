@@ -1,4 +1,4 @@
-# Lunette de diamètre 60mm du club du Cocher
+# Lunette DIY de diamètre 60mm du club du Cocher
 
 C'est [une petite lunette imaginée par Pierre REVEL au club d'Astronomie du COCHER de La Chapelle Sur Erdre](https://www.le-cocher.org/articles.php?pg=art184) qu'il est possible d'assemble avec au choix, une focal de 400, 600 ou 800mm :
 - Quelques [pièces nécessaires à imprimer en 3D sont fournies ici](./3D-Print-Components/).
