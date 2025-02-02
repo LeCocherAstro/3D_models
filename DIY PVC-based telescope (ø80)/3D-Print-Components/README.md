@@ -2,7 +2,7 @@
 
 ## Modèles imprimés et testés
 
-* `bague_focalisateur_5-PièceB.stl`: pièce B maintenant au centre du tube PVC un focalisateur avec crémaillère acueillant des oculaires de 1.25"
+* `bague_focalisateur_5-PieceB.stl`: pièce B maintenant au centre du tube PVC un focalisateur avec crémaillère acueillant des oculaires de 1.25"
 
   ![](Piece_3D_maintien_focalisateur/bague_focalisateur_5-PieceB.png)
   
