@@ -12,9 +12,12 @@ ep=4;
 trouvis=5.4; // diamètre trou des vis des colliers 
 
 // 0 pour version 192mm, 30 pour version 162mm (réduite de 30mm)
-reduc=30;
+reduc=0;
 // le nombre de murs de renfort dans la largeur dépend de la version
-wall_extent = reduc > 0 ? 100 : 80;    
+wall_extent = reduc > 0 ? 100 : 80;  
+
+// 0 = Vixen-only, 1 = Vixen + Ulanzi Ombra Video & Manfrotto photo tripods
+multi_standard = 1;
 
 module matiere() {
     union() {
@@ -41,10 +44,31 @@ module matiere() {
     }
 }
 
-difference() {
-  matiere();
-  // TROUS DE DIAMETRE <trouvis>
-  translate([0,80-reduc*2/3,-10]) cylinder(h=35,r=trouvis/2);
-  translate([0,-80+reduc*2/3,-10]) cylinder(h=35,r=trouvis/2);
+module queue_aronde_ulanzi_ombra_video(length = 70, shrink = 0) {
+    // set "shrink" to 1(mm) for Manfrotto compatibility, or 0 for original model
+
+    width  = 41-shrink;
+    height = 10;
+
+    translate([-20, length/2, 0]) 
+        rotate([90,0,0]) 
+            linear_extrude(length) {
+                polygon([[0,0],[12,0],[12,3],[width-12,3],[width-12,0],[width,0],[width,3],[width-4,height],[4,height],[0,3]]);
+            }
+}
+
+
+union() {
+    difference() {
+      matiere();
+      // TROUS DE DIAMETRE <trouvis>
+      translate([0,80-reduc*2/3,-10]) cylinder(h=35,r=trouvis/2);
+      translate([0,-80+reduc*2/3,-10]) cylinder(h=35,r=trouvis/2);
+      if(multi_standard) {
+          //translate([0,0,10+aju]) cube([20,76,10], center=true);
+          translate([0,0,10+aju]) cube([100,62,10], center=true);
+      }
+    }
+    if(multi_standard) translate([0,0,15]) rotate([0,180,0]) queue_aronde_ulanzi_ombra_video(length = 64, shrink = 0);
 }
 

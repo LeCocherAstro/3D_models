@@ -17,10 +17,11 @@
 
 
 
-* `vixen162.scad` : Queue d'aronde au format VIXEN 162 ou 192 mm spécifiquement conçue pour les colliers pour tubes diamètre 63 et leurs vis de fixation murale. Une version plus longue de 3 cm peut être obtenue en configurant la variable `reduc` à `0` (mm).
+* `vixen192_162_multi.scad` : Queue d'aronde au format VIXEN 162 ou 192 mm spécifiquement conçue pour les colliers pour tubes diamètre 63 et leurs vis de fixation murale. La version la plus courte (162 mm) peut être obtenue en configurant la variable `reduc` à `30` (mm). Le paramètre `multi_standard` contrôle la possibilité d'avoir une version multi-standards et ainsi utiliser la queue d'aronde sur une monture astronomique ou sur un pied photo (Ulanzi ou Manfrotto testés).
 
-  ![](vixen192.png)
-  
+  ![](vixen192_pure.png)
+  ![](vixen192_multi.png)
+    
   * paramètres d'impression
       * Imprimante : Zortrax M-200 - Filament : Z-ABS (diam. 1.75mm)
       * Epaisseur de couche : 0.19mm (possible en 0.29mm) - Support : auto, 20° - Qualité : haute
