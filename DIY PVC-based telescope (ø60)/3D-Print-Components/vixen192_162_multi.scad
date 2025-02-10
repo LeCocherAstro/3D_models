@@ -50,7 +50,7 @@ module queue_aronde_ulanzi_ombra_video(length = 70, shrink = 0) {
     width  = 41-shrink;
     height = 10;
 
-    translate([-20, length/2, 0]) 
+    translate([-width/2, length/2, 0]) 
         rotate([90,0,0]) 
             linear_extrude(length) {
                 polygon([[0,0],[12,0],[12,3],[width-12,3],[width-12,0],[width,0],[width,3],[width-4,height],[4,height],[0,3]]);
@@ -69,6 +69,6 @@ union() {
           translate([0,0,10+aju]) cube([100,62,10], center=true);
       }
     }
-    if(multi_standard) translate([0,0,15]) rotate([0,180,0]) queue_aronde_ulanzi_ombra_video(length = 64, shrink = 0);
+    if(multi_standard) translate([0,0,15]) rotate([0,180,0]) queue_aronde_ulanzi_ombra_video(length=64, shrink=1);
 }
 
