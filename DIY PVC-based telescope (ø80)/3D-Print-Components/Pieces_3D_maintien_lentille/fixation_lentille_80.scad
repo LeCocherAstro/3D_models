@@ -1,4 +1,7 @@
+// https://github.com/BelfrySCAD/BOSL2/wiki/TOC
+
 include <BOSL2/std.scad>
+include <BOSL2/screws.scad> // https://github.com/BelfrySCAD/BOSL2/wiki/screws.scad
 
 $fn = 100;
 chouilla = 0.2;
@@ -12,8 +15,8 @@ rattrap_diam_lentille = 1.6;
 diam_utile = 80;
 long_suppl_dans_tube = 8;
 
-diam_vis = 4;
-
+diam_vis = 2.5;    // utilisé pour les trous dans A1 dans lesquels les vis "spec_vis" sont vissées
+spec_vis = "M3x1"; // utilisé pour la tête fraisée dans la pièce A2
 
 module A1_base() {
     difference() {
@@ -36,18 +39,25 @@ module A1_lighten() {
     }
 }
 
-module trou_vis() {
-    translate([diam_int_tube/2-(diam_int_tube-diam_lentille-rattrap_diam_lentille)/4, 0, 0]) cylinder(d=diam_vis, h=32, center=true);
+module trou_vis(piece="A2") {
+    if(piece=="A1") {
+        translate([diam_int_tube/2-(diam_int_tube-diam_lentille-rattrap_diam_lentille)/4, 0, 0]) 
+            cylinder(d=diam_vis, h=32, center=true);
+    }
+    if(piece=="A2") {
+        translate([diam_int_tube/2-(diam_int_tube-diam_lentille-rattrap_diam_lentille)/4+chouilla, 0, 8]) 
+            rotate([180,0,0]) 
+                screw_hole(spec=spec_vis,length=20, head="flat");
+    }
 }
-
 
 module A1_complet(){
     difference() {
         A1_base();
         translate([0,0,ep_lentille+7]) rotate([180,0,0]) A1_lighten();
-        rotate([0,0,0])   trou_vis();
-        rotate([0,0,120]) trou_vis();
-        rotate([0,0,240]) trou_vis();
+        rotate([0,0,0])   trou_vis(piece="A1");
+        rotate([0,0,120]) trou_vis(piece="A1");
+        rotate([0,0,240]) trou_vis(piece="A1");
     }
 }
 
@@ -75,9 +85,9 @@ module A2_complet() {
         difference() {
             rotate ([180,0,0]) A2_base();
             translate([0,0,-3]) A2_lighten();
-            rotate([0,0,0])   trou_vis();
-            rotate([0,0,120]) trou_vis();
-            rotate([0,0,240]) trou_vis();
+            rotate([0,0,0])   trou_vis(piece="A2");
+            rotate([0,0,120]) trou_vis(piece="A2");
+            rotate([0,0,240]) trou_vis(piece="A2");
         }
     }
 }
@@ -85,3 +95,4 @@ module A2_complet() {
 // affichage des pièces
 color("red")  A1_complet();
 color("blue") A2_complet();
+
