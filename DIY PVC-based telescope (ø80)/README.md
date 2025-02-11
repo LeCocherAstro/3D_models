@@ -6,7 +6,7 @@ C'est la suite de la  [lunette de 60mm imaginée par Pierre REVEL du club d'Astr
 - Il est possible de se procurer pour un prix modique [un renvoi coudé](https://fr.aliexpress.com/item/1005005786284500.html) et [des oculaires](https://fr.aliexpress.com/item/32788041500.html).
 - Les bases de conception de cette lunette sont détaillées [dans ce document au format PDF](./CDC_Lunette_80.pdf).
 
-L'image ci-dessous (visible en [résolution native ici](2025-02-10-Moon_Panox2.png)) a été prise avec le modèle 80/720 sur simple pied photo/vidéo non motorisé avec une caméra astro ASI 585MC (caméra couleur non refroidie). La lune ne rentrant pas dans le champ, deux captures successives ont été réalisées pour assemblage panoramique.
+L'image ci-dessous (visible en [résolution native ici](https://github.com/LeCocherAstro/3D_models/blob/main/DIY%20PVC-based%20telescope%20(ø80)/2025-02-10-Moon_Panox2.jpg)) a été prise avec le modèle 80/720 sur simple pied photo/vidéo non motorisé avec une caméra astro ASI 585MC (caméra couleur non refroidie). La lune ne rentrant pas dans le champ, deux captures successives ont été réalisées pour assemblage panoramique.
 
 * Acquisition avec FireCapture : 
   * 1000 images par vidéo, 
