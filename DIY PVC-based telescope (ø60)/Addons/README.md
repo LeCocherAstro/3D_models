@@ -24,3 +24,11 @@ File with extensions .rsdocx are made using the free software [DesignSpark Mecha
 > Queue d'aronde au format Arca Swiss pour montage avec colliers de tubes PVC sur tête photo comme [celle-ci](https://fr.aliexpress.com/item/1005004657916177.html) trouvée par Luc sur Ali Express à 70€
 
 ![QA_ArcaSwiss](arca-swiss.jpg)
+
+# Linear focuser adapter / Adaptateur pour crémaillère de mise au point
+
+> Diameter adapter for linear focuser sourced from a Chinese online marketplace (see photo)
+
+> Adaptateur de diamètre pour monter un système de mise au point à crémaillère sur le tube PVC principal
+
+![adapt_cremaillere](adapt-59-63_cremaillere.png)
