@@ -6,12 +6,15 @@ include <BOSL2/screws.scad> // https://github.com/BelfrySCAD/BOSL2/wiki/screws.s
 $fn = 100;
 chouilla = 0.2;
 
+// mesures connues pour lentilles avec f= 900 mm ou f= 720 mm
+focale_lentille = 720;
+ep_lentille = (focale_lentille == 720) ? 12 : 11.5;
+
 diam_int_tube = 97+chouilla;
 diam_ext_tube = 100;
 
-ep_lentille = 12;
 diam_lentille = 82;
-rattrap_diam_lentille = 1.6;
+rattrap_diam_lentille = 1.8;
 diam_utile = 80;
 long_suppl_dans_tube = 8;
 

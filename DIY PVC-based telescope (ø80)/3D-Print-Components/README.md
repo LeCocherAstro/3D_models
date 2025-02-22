@@ -8,6 +8,8 @@
   
 * `fixation_lentille_80.scad` (+ versions `.STL` prêtes à l'emploi) : deux pièces (A1 et A2) fixant la lentille à l'avant du tube
 
+> ajuster la variable `focale_lentille` à 720 ou 900 pour obtenir un logement de la bonne épaisseur
+
   ![](Pieces_3D_maintien_lentille/fixation_lentille_80-PieceA2.png)
   ![](Pieces_3D_maintien_lentille/fixation_lentille_80-PieceA1.png)
   
