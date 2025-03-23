@@ -4,6 +4,7 @@
 // Projet lunette PVC 60 mm DIY
 // Queue d'aronde au format VIXEN 162mm (possibilité 192 mm) spécifiquement conçue pour
 // les colliers pour tubes diamètre 63 et leurs vis de fixation murale
+// fonctionne également pour les lunettes 80 mm DIY et les colliers pour tubes de 100mm
 
 $fn=72;
 aju=0.1;

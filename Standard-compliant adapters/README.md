@@ -2,6 +2,18 @@
 
 ## Models having reached `release` status / Modèles imprimés et testés
 
+* Adaptateur pour fixer une queue d'aronde Vixen sur un pied photo
+
+  - Logiciel : OpenSCAD (gratuit)
+
+  - [Lien fichier stl pour trépied Manfrotto Element MII](/Standard-compliant%20adapters/Support_Pied_Photo_pour_Queue_Aronde_Vixen/Support_Pied_Photo_pour_QA_Vixen_Manfrotto.stl)
+  - [Lien fichier stl pour trépied Ulanzi Ombra Video](/Standard-compliant%20adapters/Support_Pied_Photo_pour_Queue_Aronde_Vixen/Support_Pied_Photo_pour_QA_Vixen_Ulanzi.stl)
+
+![photo_1](/Standard-compliant%20adapters/Support_Pied_Photo_pour_Queue_Aronde_Vixen/Support_Pied_Photo_pour_QA_Vixen_Manfrotto_CAD.png)
+![photo_2](/Standard-compliant%20adapters/Support_Pied_Photo_pour_Queue_Aronde_Vixen/Support_Pied_Photo_pour_QA_Vixen_Manfrotto_Print.jpg)
+![photo_3](/Standard-compliant%20adapters/Support_Pied_Photo_pour_Queue_Aronde_Vixen/Support_Pied_Photo_pour_QA_Vixen_Manfrotto_OTA.jpg)
+
+
 * Queue_Aronde_Vixen_APN : Queue d'aronde Vixen adaptée aux APN
 
   - Logiciel : [Onshape](https://www.onshape.com/fr/) (gratuit)
@@ -17,6 +29,13 @@ De même, l'espacement entre les trous et la longeur des trous sont modifiables 
 ![photo_support_vixen](/Standard-compliant%20adapters/Queue_Aronde_Vixen_APN/vixen.PNG)
 ![photo2_support_vixen](/Standard-compliant%20adapters/Queue_Aronde_Vixen_APN/vixen2.PNG)
 
+* Queue d'aronde pour trépied photo Ulanzi Ombra Video
+
+  - Logiciel : OpenSCAD (gratuit)
+
+  - [Lien fichier stl](/Standard-compliant%20adapters/Queue_Aronde_Trepied_Ulanzi/Queue_Aronde_Trepied_Ulanzi.stl)
+
+![photo_qa_ulanzi](/Standard-compliant%20adapters/Queue_Aronde_Trepied_Ulanzi/Queue_Aronde_Trepied_Ulanzi.png)
 
 ## Models still on the drawing board / Design en cours
 
