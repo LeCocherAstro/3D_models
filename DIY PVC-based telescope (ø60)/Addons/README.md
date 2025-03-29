@@ -19,7 +19,7 @@ File with extensions .rsdocx are made using the free software [DesignSpark Mecha
 
 # Finder ring / bague chercheur
 
-![BagueChercheur](LunetteDIY60-BagueChercheur.jpg)
+![BagueChercheurv1](LunetteDIY60-BagueChercheur.jpg)
 
 # Dovetail / Queue d'aronde Arca Swiss #
 
