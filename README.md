@@ -11,4 +11,8 @@
 
 * `Specific to Celestron mounts/` : dossier accueillant différents objets qui n'ont de sens que pour des montures Celestron
 
+* `Accessories` : accessoires divers
 
+  * Chercheur solaire à fixer sur une lunette avec un élastique (réalisé par Etienne)
+
+    ![](Accessories/solar_finder/chercheur_solaire_solcenter_v1.png)
