@@ -17,6 +17,10 @@ File with extensions .rsdocx are made using the free software [DesignSpark Mecha
 
 ![BouchonAV](Lunette-BouchonAV.png)
 
+# Finder ring / bague chercheur
+
+![BagueChercheur](LunetteDIY60-BagueChercheur.jpg)
+
 # Dovetail / Queue d'aronde Arca Swiss #
 
 > Arca Swiss-compatible dovetail to secure the PVC tube with collars on top of a photo tripod like [this one](https://en.aliexpress.com/item/1005004657916177.html) available on Ali Express
