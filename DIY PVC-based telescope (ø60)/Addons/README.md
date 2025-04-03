@@ -33,6 +33,7 @@ File with extensions .rsdocx are made using the free software [DesignSpark Mecha
 # Vixen dovetail for previous ring / Queue d'artonde Vixen pour bague précédente
 
 > 170mm long.
+
 ![Support-Vixen170-plein](Support-Vixen170-plein.jpg)
 
 # Dovetail / Queue d'aronde Arca Swiss #
