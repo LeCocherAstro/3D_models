@@ -19,7 +19,21 @@ File with extensions .rsdocx are made using the free software [DesignSpark Mecha
 
 # Finder ring / bague chercheur
 
+> Uses Hanglife M6x9x8 threaded Insert / Utilise un écrou-insert Hanglife M6x9x8
+
 ![BagueChercheurv1](LunetteDIY60-BagueChercheur1.jpg)
+
+# Ring to attach to dovetail vixen / bague pour queue d'aronde vixen
+
+> To use with next dovetail ; Fonctionne avec queue d'aronde ci-dessous.
+> Uses Hanglife M6x9x8 threaded Inserts / Utilise des écrous-insert Hanglife M6x9x8
+
+![BagueQueueArronde64](BagueQueueArronde64.jpg)
+
+# Vixen dovetail for previous ring / Queue d'artonde Vixen pour bague précédente
+
+> 170mm long.
+![Support-Vixen170-plein](Support-Vixen170-plein.jpg)
 
 # Dovetail / Queue d'aronde Arca Swiss #
 
